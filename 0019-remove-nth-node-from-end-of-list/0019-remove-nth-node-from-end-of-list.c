@@ -12,14 +12,11 @@ int check_len(struct ListNode* head)
 
     while (head->next)
     {
-        printf("%d ", head->val);
         head = head->next;
         i++;
-        printf("%d ", i);
     }
     return i;
 }
-
 
 struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
     
