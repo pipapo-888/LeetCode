@@ -25,20 +25,11 @@ public:
         for (int i = 0; s[i]; i++)
         {
             if (is_open_bracket(s[i]))
-            {
-                printf("1\n");
                 c.push_back(s[i]);
-            }
             else if (!c.empty() && check_same(c.back(), s[i]))
-            {
-                printf("2\n");
                 c.pop_back();
-            }
             else
-            {
-                printf("3\n");
                 return false;
-            }
         }
         if (!c.empty())
             return false;
