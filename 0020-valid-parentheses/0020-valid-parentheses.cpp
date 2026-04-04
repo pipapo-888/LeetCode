@@ -1,28 +1,28 @@
 class Solution {
 private:
-    int is_open_bracket(char c)
+    bool is_open_bracket(char c)
     {
         if (c == '[' || c == '(' || c == '{' )
-            return 1;
-        return 0;
+            return true;
+        return false;
     }
 
-    int check_same(int open, int close)
+    bool check_same(char open, char close)
     {
     if (open == '(' && close == ')')
-        return (1);
+        return (true);
     if (open == '[' && close == ']')
-        return (1);
+        return (true);
     if (open == '{' && close == '}')
-        return (1);
-    return (0);
+        return (true);
+    return (false);
     }
 
 public:
     bool isValid(string s) {
         vector<char> c;
 
-        for (int i = 0; s[i]; i++)
+        for (int i = 0; i < s.size(); i++)
         {
             if (is_open_bracket(s[i]))
                 c.push_back(s[i]);
@@ -31,8 +31,6 @@ public:
             else
                 return false;
         }
-        if (!c.empty())
-            return false;
-        return true;
+        return c.empty();
     }
 };
