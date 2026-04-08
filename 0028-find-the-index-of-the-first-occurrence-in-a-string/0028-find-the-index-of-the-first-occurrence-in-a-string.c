@@ -5,8 +5,4 @@ int strStr(char* haystack, char* needle) {
         return (str - head);
     else
         return (-1);
-
- 
-
-
 }
