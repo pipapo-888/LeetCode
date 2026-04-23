@@ -6,12 +6,12 @@ public:
 
         vector<int> vec(128, 0);
 
-        for (int i = 0; i < s.size(); i++)
-            vec[s[i]]++;
-        for (int i = 0; i < t.size(); i++)
+        for (char c : s)
+            vec[c]++;
+        for (char c : t)
         {
-            vec[t[i]]--;
-            if (vec[t[i]] < 0)
+            vec[c]--;
+            if (vec[c] < 0)
                 return false;
         }
         return true;
