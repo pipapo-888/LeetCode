@@ -4,7 +4,7 @@ public:
          int prod = 1, zero_count = 0;
          vector <int> ans(nums.size());
 
-         for (int num : nums)
+         for (const int& num : nums)
          {
             if (num != 0)
                 prod *= num;
