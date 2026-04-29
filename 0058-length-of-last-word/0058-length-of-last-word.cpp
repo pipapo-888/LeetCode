@@ -8,7 +8,6 @@ public:
         int ans = 0;
         while (size >= 0 && s[size--] != ' ')
             ans++;
-
         return (ans);
     }
 };
