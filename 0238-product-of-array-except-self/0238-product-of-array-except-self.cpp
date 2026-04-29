@@ -11,8 +11,6 @@ public:
             else
                 zero_count++;
          }
-
-         cout << prod << endl; 
         
         for (int i = 0; i < nums.size(); i++)
         {
