@@ -7,12 +7,12 @@ public:
         int left = 0, right = numbers.size() - 1;
         while (left < right)
         {
-            if (numbers[left] + numbers[right] > target)
-                right--;
+            if (numbers[left] + numbers[right] == target)
+                return {left + 1, right + 1};
             else if (numbers[left] + numbers[right] < target)
                 left++;
             else
-                return (vector<int>{left + 1, right + 1});
+                right--;
         }
         return (vector<int>(0));
     }
