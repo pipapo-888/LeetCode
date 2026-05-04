@@ -14,6 +14,6 @@ public:
             else
                 right--;
         }
-        return (vector<int>(0));
+        return {0};
     }
 };
