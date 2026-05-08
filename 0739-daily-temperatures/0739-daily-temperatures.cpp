@@ -12,7 +12,6 @@ public:
             while (!stack.empty() && temperatures[stack.top()] < temperatures[i])
             {
                 ans[stack.top()] = i - stack.top();
-                cout << i << stack.top() << endl;
                 stack.pop();
             }
             stack.push(i);
