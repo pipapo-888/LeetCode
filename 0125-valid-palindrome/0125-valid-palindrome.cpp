@@ -8,9 +8,9 @@ public:
 
         while (left < right)
         {
-            while(!isalpha(s[left]) && left <= right)
+            while(!isalnum(s[left]) && left < right)
                 left++;
-            while(!isalpha(s[right]) && left <= right)
+            while(!isalnum(s[right]) && left < right)
                 right--;
             if (toupper(s[left]) != toupper(s[right]))
                 return false;
