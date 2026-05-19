@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/pipapo-888/LeetCode/tree/master/0035-search-insert-position) |
 | [0036-valid-sudoku](https://github.com/pipapo-888/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/pipapo-888/LeetCode/tree/master/0049-group-anagrams) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/pipapo-888/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/pipapo-888/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/pipapo-888/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/pipapo-888/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -121,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/pipapo-888/LeetCode/tree/master/0022-generate-parentheses) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/pipapo-888/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 ## String Matching
 |  |
 | ------- |
