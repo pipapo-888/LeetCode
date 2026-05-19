@@ -11,7 +11,6 @@ public:
                 str.erase(0, res + 1);
             str.push_back(s[i]);
             ans = max<int>(str.length(), ans);
-            cout << str << endl;
         }
         return ans;
     }
