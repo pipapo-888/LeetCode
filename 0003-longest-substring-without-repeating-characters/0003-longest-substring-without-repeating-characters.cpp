@@ -1,23 +1,18 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        
+        string str;
         int ans = 0;
 
-        for(int i = 0; i < s.size(); i++)
+        for (int i = 0; i < s.size(); i++)
         {
-            vector<bool> v(128, false);
-            for (int j = i; j < s.size(); j++)
-            {
-                if (v[s[j]])
-                    break ;
-                else
-                {
-                    ans = max(ans, j - i + 1);
-                    v[s[j]] = true;
-                }
-            }
+            int res = str.find(s[i]);
+            if (res != string::npos)
+                str.erase(0, res + 1);
+            str.push_back(s[i]);
+            ans = max<int>(str.length(), ans);
+            cout << str << endl;
         }
-        return (ans);
+        return ans;
     }
 };
