@@ -11,7 +11,7 @@ public:
             count[s[r]]++;
             maxf = max(maxf, count[s[r]]);
 
-            while(r - l + 1 > maxf + k)
+            while(r - l + 1 - maxf > k)
             {
                 count[s[l]]--;
                 l++;
